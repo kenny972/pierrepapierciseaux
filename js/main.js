@@ -15,36 +15,37 @@ var image =  boutonCompu.innerHTML;
 
 
 
-        var resultatjoueur=0;
-         var resultatordi=0;
+        var resultgamer=0;
+         var resultcompu=0;
 
-      if (gamer === ordinateur){
+      if (gamer === computer){
+          
            resultat = "Equality ! But I will win";
        }
          else if (gamer === "scissors"){
           if (computer === "pebbles"){
-         resultatordi++; resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
+         resultcompu++; resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
           }
            else {
-         resultatjoueur++; resultat = "Kenny it's the winner";
+         resultgamer++; resultat = "Kenny it's the winner";
            }
          }
 
         else if (gamer === "leaf"){
-          if (ordinateur === "pebbles"){
-          resultatjoueur++; resultat = "Kenny it's the winner";
+          if (computer === "pebbles"){
+          resultgamer++; resultat = "Kenny it's the winner";
           }
            else {
-          resultatordi++; resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
+          resultcompu++; resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
            }
          }
 
         else if (gamer === "pebbles"){
-          if (ordinateur === "scissors"){
-          resultatjoueur++; resultat = "Kenny it's the winner";
+          if (computer === "scissors"){
+          resultgamer++; resultat = "Kenny it's the winner";
           }
            else {
-          resultatordi++;  resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
+          resultcompu++;  resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
            }
 
 }
