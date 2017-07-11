@@ -8,10 +8,10 @@ document.querySelector(".utilisateur").innerHTML = utilisateur;
 for (let i = 0; i < choice.length; i++){
  choice[i].addEventListener("click", function() {
    var gamer = choice[i].className;
-   var boutonOrdinateur = choice[Math.floor(Math.random() * choice.length)];
+   var boutonCompu = choice[Math.floor(Math.random() * choice.length)];
    var resultat;
-var ordinateur =  boutonOrdinateur.firstElementChild.alt;
-var image =  boutonOrdinateur.innerHTML;
+var computer =  boutonCompu.firstElementChild.alt;
+var image =  boutonCompu.innerHTML;
 
 
 
@@ -22,7 +22,7 @@ var image =  boutonOrdinateur.innerHTML;
            resultat = "Equality ! But I will win";
        }
          else if (gamer === "scissors"){
-          if (ordinateur === "pebbles"){
+          if (computer === "pebbles"){
          resultatordi++; resultat = "I'm the winner. You are a loser ! I do not like the losers! Get out!";
           }
            else {
@@ -56,3 +56,6 @@ var image =  boutonOrdinateur.innerHTML;
         `;
       })
      }
+
+
+
